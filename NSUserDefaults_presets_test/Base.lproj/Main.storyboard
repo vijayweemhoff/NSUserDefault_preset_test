@@ -46,11 +46,67 @@
                                     <action selector="setDefaultPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Biw-Qr-BXj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcy-Db-TYI">
+                                <rect key="frame" x="20" y="188" width="30" height="30"/>
+                                <state key="normal" title="Tap!"/>
+                                <connections>
+                                    <action selector="tapButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="sII-C9-1CZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tka-OG-Kpg">
+                                <rect key="frame" x="58" y="188" width="178" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yz4-nK-R9T">
+                                <rect key="frame" x="20" y="150" width="135" height="30"/>
+                                <state key="normal" title="Put random in array"/>
+                                <connections>
+                                    <action selector="putRandomInArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pZn-sw-7ep"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ep1-Yt-Vwx">
+                                <rect key="frame" x="20" y="226" width="75" height="30"/>
+                                <state key="normal" title="Clear array">
+                                    <color key="titleColor" red="1" green="0.022048105450000001" blue="0.25620723960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearArrayPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hvt-9c-Gi3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvG-tO-Mdh">
+                                <rect key="frame" x="20" y="257" width="120" height="30"/>
+                                <state key="normal" title="Delete last object">
+                                    <color key="titleColor" red="1" green="0.022048105450000001" blue="0.25620723960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteLastObjectPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U0L-AP-auZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eY-oP-B2m">
+                                <rect key="frame" x="181" y="257" width="86" height="30"/>
+                                <state key="normal" title="Save this list">
+                                    <color key="titleColor" red="1" green="0.26465631705734338" blue="0.94975838657228828" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveListButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fzg-oI-or8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDK-D7-PxW">
+                                <rect key="frame" x="181" y="226" width="65" height="30"/>
+                                <state key="normal" title="Recall list">
+                                    <color key="titleColor" red="1" green="0.26465631709999998" blue="0.9497583866" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recallListButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBW-vz-N4r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="segColour" destination="hVj-Hw-Lb6" id="udD-Vh-2on"/>
+                        <outlet property="showElementInArray" destination="tka-OG-Kpg" id="int-No-2zx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
